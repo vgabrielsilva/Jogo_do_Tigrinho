@@ -26,6 +26,3 @@ int sortearSimbolo(Jogador* jogador);
 bool jogar(Jogador* jogador, int aposta);
 void salvarDados(Jogador* jogador);
 void carregarDados(Jogador* jogador);
-
-// PRA FAZER: adicionar mais umas função, tipo uma pra exibir as regras
-// ex: void mostrarRegras();
