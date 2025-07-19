@@ -1,12 +1,18 @@
-
 #include <iostream>
 #include <fstream>
 #include <cstdlib>
 #include <ctime>
 #include <string>
 #include <windows.h>
+#include <limits>
 
 using namespace std;
+
+#define COR_VERDE 10
+#define COR_VERMELHA 12
+#define COR_AMARELA 14
+#define COR_BRANCA 15
+#define COR_AZUL 9
 
 struct Jogador {
     int* dinheiro;
@@ -16,7 +22,11 @@ struct Jogador {
     int* derrotas;
     int* valor_ganho;
     int* valor_perdido;
+    int* vitorias_consecutivas;
 };
+
+void setCor(int cor);
+void resetCor();
 
 void inicializarJogo(Jogador* jogador, int dinheiro_inicial = 100);
 void finalizarJogo(Jogador* jogador);
